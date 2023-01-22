@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas13/14-dimasfadhil</title>
+  <link rel="stylesheet" href="w3.css">
+</head>
+<style>
+  .nav{
+    font-family: 'Open Sans';
+  }
+</style>
+<body>
+    <div class="nav w3-top"> 
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button w3-padding-large" onclick="openTab('home')">HOME</button>
+          <button class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="openTab('profile')">PROFILE</button>
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE</button>     
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <button class="w3-bar-item w3-button" onclick="openTab('galeri')">Galery</button>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="home" class="w3-center tab w3-animate-bottom" style="display: none;">
+      <div class="w3-center">
+        <div class="mySlides ">
+            <img src="kisah-umar-bin-khattab-ketika-dua-perempuan-menolak-lamarannya-bik.jpg" style="width:30%">
+        </div>
+        <div class="mySlides">
+            <img src="Screenshot_20190425-2351382.jpg" style="width:30%">
+        </div>
+        <div class="mySlides">
+          <img src="kisah-umar-bin-khattab-ketika-dua-perempuan-menolak-lamarannya-bik.jpg" style="width:30%">
+        </div>
+      <br>
+    </div>
+    
+    <div class="w3-container ">
+        <p class="w3-opacity"><i>BlablAblabla</i></p>
+        <p class=" w3-justify w3-margin-left w3-margin-right" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum illo quasi tenetur cumque nemo quas. Tempora repudiandae, necessitatibus nostrum, reprehenderit asperiores mollitia labore illo, beatae pariatur aut sed ullam voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum illo quasi tenetur cumque nemo quas. Tempora repudiandae, necessitatibus nostrum, reprehenderit asperiores mollitia labore illo, beatae pariatur aut sed ullam voluptatum?</p>
+    </div>
+      
+    <div class="w3-row"> 
+      <div class="w3-third w3-center">
+        <p>Name</p>
+        <img src="kisah-umar-bin-khattab-ketika-dua-perempuan-menolak-lamarannya-bik.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third w3-center">
+        <p>Name</p>
+        <img src="Screenshot_20190425-2351382.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third w3-center">
+        <p>Name</p>
+        <img src="kisah-umar-bin-khattab-ketika-dua-perempuan-menolak-lamarannya-bik.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  
+    </div>
+
+    <div id="profile" class="w3-container tab w3-animate-bottom" style="display:none;">
+      <div class="w3-row-padding w3-padding-32 w3-margin-top">
+        <div class="w3-third">
+          <h3>Profile</h3>
+          <p>Halo Nama saya dimas fadhil. Saya menyukai desain grafis dan menggambar.</p>
+          <p>Nim : <b>10122497</b></p>
+        </div>
+      
+        <div class="w3-third">
+          <h3>Social Media</h3>
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16">
+              <img src="kisah-umar-bin-khattab-ketika-dua-perempuan-menolak-lamarannya-bik.jpg" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Instagram</span><br>
+              <span>@blablbalab</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="Screenshot_20190425-2351382.jpg" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Linked.in</span><br>
+              <span>@blablabla</span>
+            </li> 
+          </ul>
+        </div>
+    
+        <div class="w3-third w3-serif">
+          <h3>Tags</h3>
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Graphic Designer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Front-End Dev</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">UI/Ux Dev.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="galeri" class="w3-container tab w3-animate-bottom w3-margin-top" style="display: none;">
+      <div class="w3-content" style="max-width:1500px">
+
+        
+        <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+          <h1><b>Galery</b></h1>
+          <p>here some galery!</p>
+          <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+         
+        </header>
+        </div>
+        
+        <!-- Galeri -->
+        <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+          <div class="w3-third">
+            <img src="w3-images/1.jpg" style="width:100%">
+            <img src="w3-images/2.jpg" style="width:100%">
+            <img src="w3-images/3.jpg" style="width:100%">           
+            <img src="w3-images/4.jpg" style="width:100%">           
+            <img src="w3-images/5.jpg" style="width:100%">           
+            <img src="w3-images/6.jpg" style="width:100%">           
+          </div>
+        
+          <div class="w3-third">
+            <img src="w3-images/7.jpg" style="width:100%">
+            <img src="w3-images/8.jpg" style="width:100%">
+            <img src="w3-images/9.jpg" style="width:100%">           
+            <img src="w3-images/10.jpg" style="width:100%">           
+            <img src="w3-images/11.jpg" style="width:100%">           
+            <img src="w3-images/12.jpg" style="width:100%">  
+          </div>
+        
+          <div class="w3-third">
+            <img src="w3-images/13.jpg" style="width:100%">
+            <img src="w3-images/14.jpg" style="width:100%">
+            <img src="w3-images/15.jpg" style="width:100%">           
+            <img src="w3-images/16.jpg" style="width:100%">           
+            <img src="w3-images/17.jpg" style="width:100%">           
+            <img src="w3-images/18.jpg" style="width:100%">  
+          </div>
+        </div>
+        
+        
+        </div>
+    </div>
+  
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000);
+    }
+
+    
+    function openTab(namatab) {
+      var i;
+      var x = document.getElementsByClassName("tab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(namatab).style.display = "block";
+    }
+
+    function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+      x.className = "w3-row-padding";
+    } else { 
+      x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+    </script>
+
+</body>
+</html>
